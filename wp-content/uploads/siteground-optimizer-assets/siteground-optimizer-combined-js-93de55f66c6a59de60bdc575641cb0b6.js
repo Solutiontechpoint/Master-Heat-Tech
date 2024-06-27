@@ -1755,15 +1755,15 @@ window.FontAwesomeKitConfig = {
                 detail: f
             }
         }).then(c => {
-            const e = a(d, c.status);
-            return f.status = c.status, f.apiResponse = c, ["invalid", "unaccepted", "spam", "aborted"].includes(e) ? b(d, e, f) : ["sent", "failed"].includes(e) && b(d, `mail${e}`, f), b(d, "submit", f), c
+            if(c){
+                b(d, 'mailsent', f);
+                alert('Your response has been sent. Thank you!');
+            }
+            return c;
         }).then(a => {
-            a.posted_data_hash && (d.querySelector('input[name="_wpcf7_posted_data_hash"]').value = a.posted_data_hash), "mail_sent" === a.status && (d.reset(), d.wpcf7.resetOnMailSent = !0), a.invalid_fields && a.invalid_fields.forEach(a => {
-                h(d, a.field, a.message)
-            }), d.wpcf7.parent.querySelector('.screen-reader-response [role="status"]').insertAdjacentText("beforeend", a.message), d.querySelectorAll(".wpcf7-response-output").forEach(b => {
-                b.innerText = a.message
-            })
-        }).catch(a => console.error(a))
+            d.reset();
+            d.wpcf7.resetOnMailSent = !0
+        }).catch(error => console.error(error))
     }
     c.use((c, d) => {
         if (c.wpcf7 && "feedback" === c.wpcf7.endpoint) {
