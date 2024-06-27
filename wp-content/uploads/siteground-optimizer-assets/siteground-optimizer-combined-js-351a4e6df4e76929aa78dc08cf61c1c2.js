@@ -1858,7 +1858,7 @@ window.FontAwesomeKitConfig = {
             formData: i
         };
         c({
-            endpoint: `contact-forms/${d.wpcf7.id}/feedback`,
+            endpoint: `contact.php`,
             method: "POST",
             body: i,
             wpcf7: {
