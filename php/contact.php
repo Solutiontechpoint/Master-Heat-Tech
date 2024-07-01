@@ -1,7 +1,7 @@
 <?php
 
   //To be changed
-  $receiving_email_address = 'contact@solutiontechservices.com';
+  $receiving_email_address = 'info@masterheattechnology.com';
 
   if($_POST['_wpcf7_unit_tag'] == 'wpcf7-f271-o1'){
     $from = $_POST['client-name'].' '.$_POST['client-surname'] .'<'. $_POST['email'] .'>';
