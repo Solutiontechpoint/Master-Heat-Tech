@@ -14824,7 +14824,7 @@ function(t, e) {
             window.scrollTo(0, 0)
         }));
         var u = o()("footer").outerHeight();
-        o()("body > .inner-body").css("margin-bottom", "0 px"), o()("body").hasClass("single-product") && o()("#main-menu-left li.nav-products").addClass("current-menu-item");
+        o()("body > .inner-body").css("margin-bottom", "6 px"), o()("body").hasClass("single-product") && o()("#main-menu-left li.nav-products").addClass("current-menu-item");
         var h = o()("body article.product .product-term").attr("id");
         o()("#main-menu-left li.isotope-filter").each((function() {
             o()(this).find("a").attr("href").includes(h) && (console.log("ghe semo"), o()(this).find("a").addClass("c-active"), o()(this).addClass("current-menu-item"), o()(this).addClass("active"), o()(this).parent().parent().parent().addClass("active"))
