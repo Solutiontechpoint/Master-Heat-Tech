@@ -1280,7 +1280,7 @@
     -webkit-animation: a 1s linear infinite;
     animation: a 1s linear infinite;
     background: transparent
-      url(https://calorflexhei.com/wp-includes/js/mediaelement/mejs-controls.svg) -160px -40px
+      url(https://masterheattechnology.com/wp-includes/js/mediaelement/mejs-controls.svg) -160px -40px
       no-repeat;
     display: block;
     height: 80px;
@@ -1330,7 +1330,7 @@
   }
   .mejs-button > button {
     background: transparent
-      url(https://calorflexhei.com/wp-includes/js/mediaelement/mejs-controls.svg);
+      url(https://masterheattechnology.com/wp-includes/js/mediaelement/mejs-controls.svg);
     border: 0;
     cursor: pointer;
     display: block;
@@ -2858,9 +2858,9 @@
     font-family: star;
     src: url(../../plugins/woocommerce/assets/fonts/WooCommerce.woff2)
         format("woff2"),
-      url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.woff)
+      url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.woff)
         format("woff"),
-      url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.ttf)
+      url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.ttf)
         format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -2870,9 +2870,9 @@
     font-family: WooCommerce;
     src: url(../../plugins/woocommerce/assets/fonts/WooCommerce.woff2)
         format("woff2"),
-      url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.woff)
+      url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.woff)
         format("woff"),
-      url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.ttf)
+      url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../fonts/WooCommerce.ttf)
         format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -2946,7 +2946,7 @@
     margin-top: -0.5em;
     content: "";
     animation: spin 1s ease-in-out infinite;
-    background: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/loader.svg)
+    background: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/loader.svg)
       50%;
     background-size: cover;
     line-height: 1;
@@ -5639,7 +5639,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.visa {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/visa.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/visa.svg);
   }
   #add_payment_method
     #payment
@@ -5677,7 +5677,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.mastercard {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/mastercard.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/mastercard.svg);
   }
   #add_payment_method
     #payment
@@ -5712,7 +5712,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.laser {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/laser.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/laser.svg);
   }
   #add_payment_method
     #payment
@@ -5750,7 +5750,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.dinersclub {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/diners.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/diners.svg);
   }
   #add_payment_method
     #payment
@@ -5788,7 +5788,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.maestro {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/maestro.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/maestro.svg);
   }
   #add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,
   #add_payment_method
@@ -5814,7 +5814,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.jcb {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/jcb.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/jcb.svg);
   }
   #add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,
   #add_payment_method
@@ -5846,7 +5846,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.amex {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/amex.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/amex.svg);
   }
   #add_payment_method
     #payment
@@ -5884,7 +5884,7 @@
     #payment
     div.payment_box
     .wc-credit-card-form-card-number.discover {
-    background-image: url(https://calorflexhei.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/discover.svg);
+    background-image: url(https://masterheattechnology.com/wp-content/plugins/woocommerce/assets/css/../images/icons/credit-cards/discover.svg);
   }
   #add_payment_method #payment div.payment_box span.help,
   .woocommerce-cart #payment div.payment_box span.help,
@@ -7852,7 +7852,7 @@
     font-family: pp_monument_extendedbold;
     src: url(../../themes/cflexhei/inc/fonts/monument/ppmonumentextended-bold-webfont.woff2)
         format("woff2"),
-      url(https://calorflexhei.com/wp-content/themes/cflexhei/inc/fonts/monument/ppmonumentextended-bold-webfont.woff)
+      url(https://masterheattechnology.com/wp-content/themes/cflexhei/inc/fonts/monument/ppmonumentextended-bold-webfont.woff)
         format("woff");
     font-weight: 400;
     font-style: normal;
@@ -19117,19 +19117,19 @@
   }
   .slick-loading .slick-list {
     background: #fff
-      url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object Module])
+      url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object Module])
       50% no-repeat;
   }
   @font-face {
     font-family: slick;
-    src: url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object Module]);
-    src: url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object\ Module]?#iefix)
+    src: url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object Module]);
+    src: url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object\ Module]?#iefix)
         format("embedded-opentype"),
-      url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object Module])
+      url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object Module])
         format("woff"),
-      url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object Module])
+      url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object Module])
         format("truetype"),
-      url(https://calorflexhei.com/wp-content/themes/cflexhei/build/[object\ Module]#slick)
+      url(https://masterheattechnology.com/wp-content/themes/cflexhei/build/[object\ Module]#slick)
         format("svg");
     font-weight: 400;
     font-style: normal;
