@@ -31,7 +31,7 @@ def load_template():
 def rebrand(text):
     text = re.sub(r"\bAnupam(?:\s+Heaters?|\s+Electroheat)?(?:'s)?\b", "Master Heat Industries", text, flags=re.I)
     text = re.sub(r"Master Heat Industries's\b", "Master Heat Industries'", text)
-    text = re.sub(r"info@anupamheaters\.com", "info@masterheattechnology.com", text, flags=re.I)
+    text = re.sub(r"info@anupamheaters\.com", "info@masterheatindustries.com", text, flags=re.I)
     text = re.sub(r"\+91-\d+", "", text)
     text = re.sub(r"Mumbai\.?\s*INDIA\.?", "", text, flags=re.I)
     text = re.sub(r"\s{2,}", " ", text)

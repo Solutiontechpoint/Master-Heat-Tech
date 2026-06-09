@@ -13,36 +13,31 @@ CONTACT_BLOCK = """                        <div class="site-contact-block">
                                 <li class="site-footer__contact-item">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <div>
-                                        <a href="tel:+97477805150">+974 7780 5150</a>
-                                        <a href="tel:+97455359440">+974 5535 9440</a>
+                                        <a href="tel:+919358146992">+91 9358146992</a> (WhatsApp)
                                     </div>
                                 </li>
                                 <li class="site-footer__contact-item">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <div>
-                                        <a href="mailto:info@masterheattechnology.com">info@masterheattechnology.com</a>
-                                        <a href="mailto:sales@masterheattechnology.com">sales@masterheattechnology.com</a>
+                                        <a href="mailto:info@masterheatindustries.com">info@masterheatindustries.com</a>
+                                    </div>
+                                </li>
+                                <li class="site-footer__contact-item">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <div>
+                                        <a href="https://www.masterheatindustries.com" target="_blank" rel="noopener">www.masterheatindustries.com</a>
                                     </div>
                                 </li>
                                 <li class="site-footer__contact-item">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <div class="site-footer__addresses">
                                         <div>
-                                            <span class="site-footer__address-label">Qatar</span>
                                             <p class="site-footer__address-text">
-                                                <a href="https://maps.app.goo.gl/9cGCiE1r5PXho6dN7" rel="nofollow" target="_blank" title="Master Heat Industries on Google Maps">
-                                                    PO Box 17115, 1st Floor, Office No. 2,<br>
-                                                    Shahama Complex, Zone 55, Street 180,<br>
-                                                    Building 45, Aziziya, Doha, Qatar
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <span class="site-footer__address-label">India</span>
-                                            <p class="site-footer__address-text">
+                                                Master Heat Industries<br>
+                                                GSTIN: 27ALUPJ4427B1Z2<br>
                                                 Pilot Industrial Estate, Gala No. 36,<br>
                                                 Navghar Road, Samarth Krupa Nagar,<br>
-                                                Vasai, India
+                                                Vasai-East, Maharashtra &ndash; 401202
                                             </p>
                                         </div>
                                     </div>
