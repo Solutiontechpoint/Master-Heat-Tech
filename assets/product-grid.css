@@ -1,0 +1,17 @@
+/* Uniform product card thumbnails — same box size, no image stretching */
+.products-grid .card a figure {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.products-grid .card a figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
