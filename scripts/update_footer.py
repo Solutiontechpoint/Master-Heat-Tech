@@ -85,7 +85,7 @@ def build_footer(prefix: str) -> str:
                     <li class="site-footer__contact-item">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <div>
-                            <a href="tel:+919358146992">+91 9358146992</a> (WhatsApp)
+                            <a href="tel:+919358146992">+91 9358146992</a>
                         </div>
                     </li>
                     <li class="site-footer__contact-item">
