@@ -301,6 +301,51 @@ body.company .company-cta__actions {
   justify-content: center;
 }
 
+body.company .company-certifications {
+  background: var(--co-color-surface);
+  border-block: 1px solid var(--co-color-border);
+}
+
+body.company .company-certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+body.company .company-cert-card {
+  background: var(--co-color-bg);
+  border: 1px solid var(--co-color-border);
+  border-radius: var(--co-radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--co-shadow);
+}
+
+body.company .company-cert-card h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+body.company .company-cert-card p {
+  color: var(--co-color-muted);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+body.company .company-cert-card .view-cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--co-color-accent);
+  text-decoration: none;
+}
+
+body.company .company-cert-card .view-cert:hover {
+  text-decoration: underline;
+}
+
 body.company .btn-cflex {
   font-family: var(--co-font-sans) !important;
   font-weight: 600 !important;
@@ -312,6 +357,10 @@ body.company .btn-cflex {
 @media (max-width: 991px) {
   body.company .company-stats__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.company .company-certifications__grid {
+    grid-template-columns: 1fr;
   }
 
   body.company .company-why__grid {

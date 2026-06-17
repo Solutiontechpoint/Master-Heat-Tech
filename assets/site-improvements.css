@@ -146,6 +146,25 @@ section.bcrumb-filters .categories-filter > li {
   min-height: 120px;
 }
 
+/* Certificate view links (company files) */
+a.view-cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.view-cert > i {
+  font-size: 1rem;
+}
+
+a.view-cert:hover {
+  color: #d91015;
+  text-decoration: none;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .ani,
