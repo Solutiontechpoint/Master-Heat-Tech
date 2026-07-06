@@ -33,7 +33,7 @@ CONTACT_BLOCK = """                        <div class="site-contact-block">
                                     <div class="site-footer__addresses">
                                         <div>
                                             <p class="site-footer__address-text">
-                                                Master Heat Industries<br>
+                                                Masterheat Industries<br>
                                                 GSTIN: 27ALUPJ4427B1Z2<br>
                                                 Pilot Industrial Estate, Gala No. 36,<br>
                                                 Navghar Road, Samarth Krupa Nagar,<br>
@@ -375,8 +375,8 @@ def fix_typos(content: str) -> str:
     content = content.replace('title="Cut-to-lenght Cables', 'title="Cut-to-length Cables')
     content = content.replace("Superior Perfomance", "Superior Performance")
     content = content.replace("> Perfomance <", "> Performance <")
-    content = content.replace("Caorflex HEI industries", "Master Heat Industries")
-    content = content.replace("Caorflex HEI", "Master Heat Industries")
+    content = content.replace("Caorflex HEI industries", "Masterheat Industries")
+    content = content.replace("Caorflex HEI", "Masterheat Industries")
     content = content.replace(
         "<h5 class=\"text-uppercase\"> We're at your service</h6>",
         "<h5 class=\"text-uppercase\"> We're at your service</h5>",

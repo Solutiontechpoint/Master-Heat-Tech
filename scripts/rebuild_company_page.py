@@ -12,9 +12,9 @@ NEW_MAIN = """<div class="company-page">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 ani" data-josh-anim-name="slideInUp">
-                <span class="company-eyebrow">About Master Heat Industries</span>
+                <span class="company-eyebrow">About Masterheat Industries</span>
                 <h1 class="company-hero__title">Industrial heating solutions, made in India</h1>
-                <p class="company-lead">Master Heat Industries designs and manufactures industrial heating elements and systems from our facility in Vasai, Maharashtra. We support OEMs, plant engineers, and commercial operators with reliable, application-specific heating solutions.</p>
+                <p class="company-lead">Masterheat Industries designs and manufactures industrial heating elements and systems in-house. We support OEMs, plant engineers, and commercial operators with reliable, application-specific heating solutions.</p>
                 <div class="company-hero__actions">
                     <a href="../master-heat-tech-products/index.html" class="btn-cflex dark w-icons high" title="Explore products">Explore Products <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     <a href="../contacts-us/index.html" class="btn-cflex inv w-icons text-dark high" title="Contact us">Contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -22,7 +22,7 @@ NEW_MAIN = """<div class="company-page">
             </div>
             <div class="col-lg-6 mt-5 mt-lg-0 ani" data-josh-anim-name="slideInRight">
                 <div class="company-hero__image">
-                    <img src="../assets/flexible-tubular-heaters.jpg" alt="Industrial tubular heaters manufactured by Master Heat Industries" class="img-fluid" loading="lazy" />
+                    <img src="../assets/flexible-tubular-heaters.jpg" alt="Industrial tubular heaters manufactured by Masterheat Industries" class="img-fluid" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -33,8 +33,8 @@ NEW_MAIN = """<div class="company-page">
     <div class="container">
         <div class="company-stats__grid">
             <div class="company-stats__item">
-                <span class="company-stats__value">Vasai, Maharashtra</span>
-                <span class="company-stats__label">India manufacturing base</span>
+                <span class="company-stats__value">In-house manufacturing</span>
+                <span class="company-stats__label">Engineering &amp; production</span>
             </div>
             <div class="company-stats__item">
                 <span class="company-stats__value">27ALUPJ4427B1Z2</span>
@@ -62,7 +62,7 @@ NEW_MAIN = """<div class="company-page">
             </div>
             <div class="col-lg-6 order-lg-1 mt-5 mt-lg-0 ani" data-josh-anim-name="slideInUp">
                 <div class="company-hero__image">
-                    <img src="../assets/manifold-tubular-heaters.jpg" alt="Manifold tubular heaters at Master Heat Industries" class="img-fluid" loading="lazy" />
+                    <img src="../assets/manifold-tubular-heaters.jpg" alt="Manifold tubular heaters at Masterheat Industries" class="img-fluid" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ NEW_MAIN = """<div class="company-page">
                 <div class="company-card">
                     <div class="company-card__icon"><i class="fa fa-industry" aria-hidden="true"></i></div>
                     <h3>In-house manufacturing</h3>
-                    <p>Production at Pilot Industrial Estate, Vasai-East gives us direct control over quality and lead times.</p>
+                    <p>In-house production gives us direct control over quality and lead times.</p>
                 </div>
             </div>
             <div class="col-md-4 ani" data-josh-anim-name="slideInUp">
@@ -135,7 +135,7 @@ NEW_MAIN = """<div class="company-page">
                 <div class="col-lg-7">
                     <h2>Our facility</h2>
                     <address>
-                        <strong>Master Heat Industries</strong><br>
+                        <strong>Masterheat Industries</strong><br>
                         GSTIN: 27ALUPJ4427B1Z2<br>
                         Pilot Industrial Estate, Gala No. 36,<br>
                         Navghar Road, Samarth Krupa Nagar,<br>
@@ -221,10 +221,10 @@ def main():
             '    <link rel="stylesheet" href="../assets/header.css" media="all" />\n' + css_link,
         )
 
-    meta_old = 'content="Company - Master Heat Industries"'
-    meta_new = 'content="About Us | Master Heat Industries - Industrial heating manufacturer in Vasai, Maharashtra"'
-    content = content.replace('<title>Company - Master Heat Industries</title>', '<title>About Us | Master Heat Industries</title>')
-    content = content.replace('content="Company - Master Heat Industries"', meta_new, 2)
+    meta_old = 'content="Company - Masterheat Industries"'
+    meta_new = 'content="About Us | Masterheat Industries - Industrial heating manufacturer in India"'
+    content = content.replace('<title>Company - Masterheat Industries</title>', '<title>About Us | Masterheat Industries</title>')
+    content = content.replace('content="Company - Masterheat Industries"', meta_new, 2)
 
     COMPANY_HTML.write_text(content, encoding="utf-8")
     print("Rebuilt company/index.html")

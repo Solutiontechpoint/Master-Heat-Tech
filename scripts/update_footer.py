@@ -60,7 +60,7 @@ def build_footer(prefix: str) -> str:
     <div class="container">
         <div class="row site-footer__main">
             <div class="col-lg-3 col-md-6 site-footer__brand">
-                <img src="{assets}" width="200" height="auto" alt="Master Heat Industries logo" class="img-fluid" loading="lazy" />
+                <img src="{assets}" width="200" height="auto" alt="Masterheat Industries logo" class="img-fluid" loading="lazy" />
                 <p class="site-footer__tagline">Heating elements for the industrial sector</p>
             </div>
             <div class="col-lg-4 col-md-6 site-footer__products">
@@ -105,7 +105,7 @@ def build_footer(prefix: str) -> str:
                         <div class="site-footer__addresses">
                             <div>
                                 <p class="site-footer__address-text">
-                                    Master Heat Industries<br>
+                                    Masterheat Industries<br>
                                     GSTIN: 27ALUPJ4427B1Z2<br>
                                     Pilot Industrial Estate, Gala No. 36,<br>
                                     Navghar Road, Samarth Krupa Nagar,<br>
@@ -119,7 +119,7 @@ def build_footer(prefix: str) -> str:
             </div>
         </div>
         <div class="site-footer__bottom">
-            <p>&copy; 2026 Master Heat Industries</p>
+            <p>&copy; 2026 Masterheat Industries</p>
             <p><a href="https://solutiontechservices.com/" title="Solution Tech Services" rel="noopener">Credits: Solution Tech Services</a></p>
         </div>
     </div>

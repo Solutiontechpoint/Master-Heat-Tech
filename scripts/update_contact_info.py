@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply India-only contact details and Master Heat Industries branding site-wide."""
+"""Apply India-only contact details and Masterheat Industries branding site-wide."""
 
 import re
 from pathlib import Path
@@ -29,7 +29,7 @@ CONTACT_LIST_BLOCK = """                                <li class="site-footer__
                                     <div class="site-footer__addresses">
                                         <div>
                                             <p class="site-footer__address-text">
-                                                Master Heat Industries<br>
+                                                Masterheat Industries<br>
                                                 GSTIN: 27ALUPJ4427B1Z2<br>
                                                 Pilot Industrial Estate, Gala No. 36,<br>
                                                 Navghar Road, Samarth Krupa Nagar,<br>
@@ -62,7 +62,7 @@ QATAR_ADDRESS_RE = re.compile(
 )
 
 MISSION_OLD = (
-    "Masterheat Technologies , a superlative Doha,Qatar based company which\n"
+    "Masterheat Industries , a superlative Doha,Qatar based company which\n"
     "primarily provides turnkey heating solutions for industrial, commercial\n"
     "and also domestic purposes. Our company currently functions through\n"
     "three dedicated plants using various heating technologies and employs\n"
@@ -80,9 +80,8 @@ MISSION_OLD = (
 )
 
 MISSION_NEW = (
-    "Master Heat Industries is a Vasai, Maharashtra based company that provides "
-    "turnkey heating solutions for industrial, commercial, and domestic applications. "
-    "Our manufacturing facility at Pilot Industrial Estate delivers high-quality "
+    "Masterheat Industries provides turnkey heating solutions for industrial, commercial, "
+    "and domestic applications. Our in-house manufacturing facility delivers high-quality "
     "heating elements and systems using advanced heating technologies. With decades "
     "of experience in varied technological challenges and robust system delivery, "
     "we serve customers across India with reliable, efficient heating solutions "
@@ -95,17 +94,16 @@ WORLD_SECTION_OLD = (
 )
 
 WORLD_SECTION_NEW = (
-    "Master Heat Industries manufactures heating elements and industrial heating "
-    "systems from our facility in Vasai, Maharashtra. Visit our website to explore "
-    "our full product catalogue."
+    "Masterheat Industries manufactures heating elements and industrial heating "
+    "systems in-house. Visit our website to explore our full product catalogue."
 )
 
 
 def apply_replacements(content: str) -> str:
     content = content.replace(MISSION_OLD, MISSION_NEW)
     content = content.replace(WORLD_SECTION_OLD, WORLD_SECTION_NEW)
-    content = content.replace("Masterheat Technologies", "Master Heat Industries")
-    content = content.replace("Master Heat Technology", "Master Heat Industries")
+    content = content.replace("Masterheat Industries", "Masterheat Industries")
+    content = content.replace("Masterheat Technology", "Masterheat Industries")
     content = content.replace("info@masterheattechnology.com", "info@masterheatindustries.com")
 
     content = re.sub(
@@ -130,7 +128,7 @@ def apply_replacements(content: str) -> str:
         "Pilot Industrial Estate, Gala No. 36,<br>\n"
         "                                    Navghar Road, Samarth Krupa Nagar,<br>\n"
         "                                    Vasai, India",
-        "Master Heat Industries<br>\n"
+        "Masterheat Industries<br>\n"
         "                                    GSTIN: 27ALUPJ4427B1Z2<br>\n"
         "                                    Pilot Industrial Estate, Gala No. 36,<br>\n"
         "                                    Navghar Road, Samarth Krupa Nagar,<br>\n"
@@ -140,7 +138,7 @@ def apply_replacements(content: str) -> str:
         "Pilot Industrial Estate, Gala No. 36,<br>\n"
         "                                                Navghar Road, Samarth Krupa Nagar,<br>\n"
         "                                                Vasai, India",
-        "Master Heat Industries<br>\n"
+        "Masterheat Industries<br>\n"
         "                                                GSTIN: 27ALUPJ4427B1Z2<br>\n"
         "                                                Pilot Industrial Estate, Gala No. 36,<br>\n"
         "                                                Navghar Road, Samarth Krupa Nagar,<br>\n"
@@ -156,8 +154,8 @@ def apply_replacements(content: str) -> str:
     content = OLD_CONTACT_BLOCK_RE.sub(CONTACT_LIST_BLOCK, content)
 
     content = content.replace(
-        "MORE: Master Heat Industries IN THE WORLD",
-        "MORE: Master Heat Industries",
+        "MORE: Masterheat Industries IN THE WORLD",
+        "MORE: Masterheat Industries",
     )
 
     return content

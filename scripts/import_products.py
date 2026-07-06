@@ -29,8 +29,8 @@ def load_template():
 
 
 def rebrand(text):
-    text = re.sub(r"\bAnupam(?:\s+Heaters?|\s+Electroheat)?(?:'s)?\b", "Master Heat Industries", text, flags=re.I)
-    text = re.sub(r"Master Heat Industries's\b", "Master Heat Industries'", text)
+    text = re.sub(r"\bAnupam(?:\s+Heaters?|\s+Electroheat)?(?:'s)?\b", "Masterheat Industries", text, flags=re.I)
+    text = re.sub(r"Masterheat Industries's\b", "Masterheat Industries'", text)
     text = re.sub(r"info@anupamheaters\.com", "info@masterheatindustries.com", text, flags=re.I)
     text = re.sub(r"\+91-\d+", "", text)
     text = re.sub(r"Mumbai\.?\s*INDIA\.?", "", text, flags=re.I)
@@ -155,7 +155,7 @@ def parse_anupam(slug):
         if len(paras) >= 2:
             break
     description = " ".join(paras[:2]) if paras else (
-        f"Master Heat Industries offers high-quality {title.lower()} for industrial heating applications."
+        f"Masterheat Industries offers high-quality {title.lower()} for industrial heating applications."
     )
 
     features = []
@@ -225,7 +225,7 @@ def generate_page(template, slug, display_title, description, features, image_fi
 
 def mht_description(title):
     return (
-        f"Master Heat Industries {title} is engineered for reliable performance in demanding "
+        f"Masterheat Industries {title} is engineered for reliable performance in demanding "
         f"industrial heating applications. Designed for efficiency and durability, this product "
         f"meets the requirements of modern manufacturing and process industries."
     )
@@ -303,14 +303,14 @@ def build_card(item, use_local_image=True):
     full = f"{title} - MHT"
     if use_local_image or "image_url" not in item:
         img_src = f"../assets/{slug}.jpg"
-        img_tag = f'<img src="{img_src}" alt="{full} product image Master Heat Industries" class="img-fluid" />'
+        img_tag = f'<img src="{img_src}" alt="{full} product image Masterheat Industries" class="img-fluid" />'
     else:
         url = item["image_url"]
-        img_tag = f'<img src="{url}" alt="{full} product image Master Heat Industries" class="img-fluid" />'
+        img_tag = f'<img src="{url}" alt="{full} product image Masterheat Industries" class="img-fluid" />'
 
     return f"""                <div class="col-xl-4  col-lg-6 col-md-6 mb-5 card-wrapper {category}">
                     <article class="card" id="anupam-{slug}">
-                        <a href="../product/{slug}/index.html" title="{full} Master Heat Industries">
+                        <a href="../product/{slug}/index.html" title="{full} Masterheat Industries">
                             <figure> <i class="fa fa-arrow-right" aria-hidden="true"></i> {img_tag}</figure>
                             <h2 class="title mt-0"> {full}</h2> </a>
                     </article>
@@ -324,11 +324,11 @@ def update_products_grid(manifest):
     new_filters = [
         ('data-filter=".temperature-sensors"> Temperature Sensors </a></li>',
          'data-filter=".temperature-sensors"> Temperature Sensors </a></li>\n'
-         '                        <li> <a href="javascript:;" title="Coil Heaters - Master Heat Industries" class="" data-filter=".coil-heaters"> Coil Heaters </a></li>\n'
-         '                        <li> <a href="javascript:;" title="Manifold Heaters - Master Heat Industries" class="" data-filter=".manifold-heaters"> Manifold Heaters </a></li>\n'
-         '                        <li> <a href="javascript:;" title="Porcelain Heaters - Master Heat Industries" class="" data-filter=".porcelain-heaters"> Porcelain Heaters </a></li>\n'
-         '                        <li> <a href="javascript:;" title="Temperature Controllers - Master Heat Industries" class="" data-filter=".temperature-controllers"> Temperature Controllers </a></li>\n'
-         '                        <li> <a href="javascript:;" title="Accessories - Master Heat Industries" class="" data-filter=".accessories"> Accessories </a></li>'),
+         '                        <li> <a href="javascript:;" title="Coil Heaters - Masterheat Industries" class="" data-filter=".coil-heaters"> Coil Heaters </a></li>\n'
+         '                        <li> <a href="javascript:;" title="Manifold Heaters - Masterheat Industries" class="" data-filter=".manifold-heaters"> Manifold Heaters </a></li>\n'
+         '                        <li> <a href="javascript:;" title="Porcelain Heaters - Masterheat Industries" class="" data-filter=".porcelain-heaters"> Porcelain Heaters </a></li>\n'
+         '                        <li> <a href="javascript:;" title="Temperature Controllers - Masterheat Industries" class="" data-filter=".temperature-controllers"> Temperature Controllers </a></li>\n'
+         '                        <li> <a href="javascript:;" title="Accessories - Masterheat Industries" class="" data-filter=".accessories"> Accessories </a></li>'),
     ]
     for old, new in new_filters:
         if "coil-heaters" not in content:
@@ -371,14 +371,14 @@ NAV_INSERT_BLOCK_PRODUCT = NAV_INSERT_BLOCK
 
 FOOTER_INSERT_AFTER = (
     'class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.temperature-sensors"'
-    'title="Temperature Sensors Master Heat Industries">Temperature Sensors</a></li>'
+    'title="Temperature Sensors Masterheat Industries">Temperature Sensors</a></li>'
 )
 
-FOOTER_INSERT_BLOCK = """                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1551"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.coil-heaters" title="Coil Heaters Master Heat Industries">Coil Heaters</a></li>
-                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1552"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.manifold-heaters" title="Manifold Heaters Master Heat Industries">Manifold Heaters</a></li>
-                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1553"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.porcelain-heaters" title="Porcelain Heaters Master Heat Industries">Porcelain Heaters</a></li>
-                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1554"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.temperature-controllers" title="Temperature Controllers Master Heat Industries">Temperature Controllers</a></li>
-                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1555"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.accessories" title="Accessories Master Heat Industries">Accessories</a></li>"""
+FOOTER_INSERT_BLOCK = """                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1551"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.coil-heaters" title="Coil Heaters Masterheat Industries">Coil Heaters</a></li>
+                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1552"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.manifold-heaters" title="Manifold Heaters Masterheat Industries">Manifold Heaters</a></li>
+                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1553"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.porcelain-heaters" title="Porcelain Heaters Masterheat Industries">Porcelain Heaters</a></li>
+                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1554"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.temperature-controllers" title="Temperature Controllers Masterheat Industries">Temperature Controllers</a></li>
+                                    <li class="nav-main-item isotope-filter menu-item menu-item-type-custom menu-item-object-custom menu-item-1555"> <a class="nav-main-link" href="../../master-heat-tech-products/index.html#filter=.accessories" title="Accessories Masterheat Industries">Accessories</a></li>"""
 
 
 NAV_CATEGORIES = [
@@ -445,7 +445,7 @@ def update_nav_in_file(path, depth):
         )
         footer_anchor = (
             'href="master-heat-tech-products/index.html#filter=.temperature-sensors"'
-            'title="Temperature Sensors Master Heat Industries">Temperature Sensors</a></li>'
+            'title="Temperature Sensors Masterheat Industries">Temperature Sensors</a></li>'
         )
         content = content.replace(
             footer_anchor, footer_anchor + "\n" + FOOTER_INSERT_BLOCK.replace("../../", ""), 1
