@@ -55,7 +55,12 @@ body.homepage .site-header .navbar-nav .nav-link {
 
 body.homepage section.intro-content,
 body.homepage section.home-about,
+body.homepage section.home-engineering,
+body.homepage section.home-industries,
+body.homepage section.home-global,
+body.homepage section.home-innovation,
 body.homepage section.home-values,
+body.homepage section.home-founder,
 body.homepage section.carousel-wrapper {
   padding-block: var(--home-section-pad);
 }
@@ -629,6 +634,327 @@ body.homepage .home-values__card p {
   body.homepage .home-values__grid {
     grid-template-columns: 1fr;
   }
+
+  body.homepage .home-values__grid--two {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Engineering excellence ─── */
+body.homepage section.home-engineering {
+  background: var(--home-color-bg);
+  border-bottom: 1px solid rgba(34, 30, 28, 0.08);
+}
+
+body.homepage .home-engineering__header {
+  max-width: 44rem;
+  margin-bottom: 2rem;
+}
+
+body.homepage .home-engineering__title {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.875rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--home-color-text) !important;
+  margin: 0 0 1rem !important;
+}
+
+body.homepage .home-engineering__lead {
+  font-size: var(--home-text-base);
+  line-height: 1.7;
+  color: var(--home-color-muted);
+  margin: 0 0 0.85rem;
+}
+
+body.homepage .home-engineering__iso-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+body.homepage .home-engineering__iso-card {
+  background: var(--home-color-surface);
+  border: 1px solid rgba(34, 30, 28, 0.08);
+  border-radius: var(--home-radius-lg);
+  padding: 1.35rem 1.25rem;
+  box-shadow: 0 2px 12px rgba(34, 30, 28, 0.04);
+}
+
+body.homepage .home-engineering__iso-card h3 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: var(--home-color-text) !important;
+  margin-bottom: 0.4rem !important;
+}
+
+body.homepage .home-engineering__iso-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--home-color-muted);
+  margin: 0 0 0.85rem;
+}
+
+body.homepage .home-engineering__cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--home-color-accent);
+  text-decoration: none;
+}
+
+body.homepage .home-engineering__cert-link:hover {
+  text-decoration: underline;
+}
+
+body.homepage .home-engineering__capabilities-title {
+  font-size: 1.0625rem !important;
+  font-weight: 700 !important;
+  color: var(--home-color-text) !important;
+  margin-bottom: 1rem !important;
+}
+
+body.homepage .home-engineering__capabilities-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+
+body.homepage .home-engineering__capabilities-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--home-color-text);
+}
+
+body.homepage .home-engineering__capabilities-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--home-color-accent);
+}
+
+body.homepage .home-engineering__note {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--home-color-muted);
+  margin: 0;
+  max-width: 48rem;
+}
+
+@media (max-width: 991.98px) {
+  body.homepage .home-engineering__iso-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.homepage .home-engineering__capabilities-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.homepage .home-engineering__capabilities-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Industries ─── */
+body.homepage section.home-industries {
+  background: var(--home-color-surface);
+  border-bottom: 1px solid rgba(34, 30, 28, 0.08);
+}
+
+body.homepage .home-industries__title {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.875rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--home-color-text) !important;
+  margin: 0 0 1rem !important;
+}
+
+body.homepage .home-industries__lead {
+  font-size: var(--home-text-base);
+  line-height: 1.7;
+  color: var(--home-color-muted);
+  margin-bottom: 0.85rem;
+}
+
+body.homepage .home-industries__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+body.homepage .home-industries__tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--home-color-text);
+  background: var(--home-color-bg);
+  border: 1px solid rgba(34, 30, 28, 0.1);
+  border-radius: 999px;
+}
+
+/* ─── Global reach ─── */
+body.homepage section.home-global {
+  background: #221e1c;
+  color: #fff;
+  padding-block: clamp(2.5rem, 5vw, 3.5rem) !important;
+}
+
+body.homepage .home-global__inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.homepage .home-global__inner .subtitle {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+body.homepage .home-global__title {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.875rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: #fff !important;
+  margin: 0 0 1rem !important;
+}
+
+body.homepage .home-global__inner p {
+  font-size: var(--home-text-base);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 0.85rem;
+}
+
+body.homepage .home-global__inner p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Innovation ─── */
+body.homepage section.home-innovation {
+  background: var(--home-color-bg);
+  border-bottom: 1px solid rgba(34, 30, 28, 0.08);
+}
+
+body.homepage .home-innovation__title {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.875rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--home-color-text) !important;
+  margin: 0 0 1rem !important;
+}
+
+body.homepage .home-innovation__lead {
+  font-size: var(--home-text-base);
+  line-height: 1.7;
+  color: var(--home-color-muted);
+  margin-bottom: 0.85rem;
+}
+
+body.homepage .home-innovation__figure {
+  margin: 0;
+  border-radius: var(--home-radius-lg);
+  overflow: hidden;
+  aspect-ratio: 5 / 4;
+  box-shadow: 0 20px 48px rgba(34, 30, 28, 0.14);
+  border: 4px solid #fff;
+}
+
+body.homepage .home-innovation__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── Founder quote ─── */
+body.homepage section.home-founder {
+  background: var(--home-color-surface);
+  border-bottom: 1px solid rgba(34, 30, 28, 0.08);
+}
+
+body.homepage .home-founder__quote {
+  margin: 0 0 2rem;
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  background: linear-gradient(135deg, #fafafa 0%, #f3f2f1 100%);
+  border: 1px solid rgba(34, 30, 28, 0.08);
+  border-left: 4px solid var(--home-color-accent);
+  border-radius: var(--home-radius-lg);
+}
+
+body.homepage .home-founder__quote .subtitle {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+body.homepage .home-founder__quote p {
+  font-size: clamp(1.0625rem, 0.95rem + 0.4vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--home-color-text);
+  font-style: italic;
+  margin: 0 0 1.25rem;
+}
+
+body.homepage .home-founder__quote footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+body.homepage .home-founder__quote cite {
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--home-color-text);
+}
+
+body.homepage .home-founder__quote footer span {
+  font-size: 0.875rem;
+  color: var(--home-color-muted);
+}
+
+body.homepage .home-founder__closing {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+body.homepage .home-founder__tagline {
+  font-size: clamp(1.125rem, 0.95rem + 0.6vw, 1.375rem);
+  font-weight: 700;
+  color: var(--home-color-text);
+  margin: 0 0 0.5rem;
+}
+
+body.homepage .home-founder__values {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--home-color-accent);
+  margin: 0 0 0.35rem;
+}
+
+body.homepage .home-founder__motto {
+  font-size: 0.875rem;
+  color: var(--home-color-muted);
+  margin: 0;
+}
+
+body.homepage .home-values__grid--two {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* ─── Products intro ─── */
@@ -680,7 +1006,12 @@ body.homepage section.intro-content.logos {
 
 body.homepage section.intro-content .subtitle,
 body.homepage section.home-about .subtitle,
+body.homepage section.home-engineering .subtitle,
+body.homepage section.home-industries .subtitle,
+body.homepage section.home-global .subtitle,
+body.homepage section.home-innovation .subtitle,
 body.homepage section.home-values .subtitle,
+body.homepage section.home-founder .subtitle,
 body.homepage section.home-products-intro .subtitle,
 body.homepage .home-gallery-intro .subtitle {
   font-size: var(--home-text-label) !important;
