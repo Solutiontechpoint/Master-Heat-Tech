@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Deduplicate footer nav and add missing category links across site HTML files."""
+"""Deduplicate footer nav and add missing category links across site HTML files.
+
+Note: The Products dropdown mega menu is maintained by scripts/update_mega_menu.py
+and scripts/mega_menu_data.py. Do not edit category/product nav lists here.
+"""
 
 import re
 from pathlib import Path
