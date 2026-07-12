@@ -14,6 +14,9 @@ MEGA_MENU_CATEGORIES = {
                 "title": "Industrial Kitchen Equipment Heater - MHT",
                 "slug": "industrial-kitchen-equipment-heater-ikhx",
             },
+            {"title": "Tubular Heaters - MHT", "slug": "tubular-heaters"},
+            {"title": "Finned Tubular Heaters - MHT", "slug": "finned-tubular-heaters"},
+            {"title": "Immersion Heaters - MHT", "slug": "immersion-heaters"},
         ],
     },
     "cartridge-heaters": {
@@ -22,6 +25,11 @@ MEGA_MENU_CATEGORIES = {
         "products": [
             {"title": "Cartridge Heater - MHT", "slug": "cartridge-heater-hchx"},
             {"title": "Mini Bar Heater - MHT", "slug": "mini-bar-heater-mbmx"},
+            {"title": "High Density Cartridge Heaters - MHT", "slug": "high-density-cartridge-heaters"},
+            {
+                "title": "Low & Medium Density Cartridge Heaters - MHT",
+                "slug": "low-medium-density-cartridge-heaters",
+            },
         ],
     },
     "manifold-heaters": {
@@ -37,6 +45,7 @@ MEGA_MENU_CATEGORIES = {
         "filter_class": ".ceramic-heaters",
         "products": [
             {"title": "Ceramic Band Heater - MHT", "slug": "ceramic-band-heater-bhcxbhsx"},
+            {"title": "Ceramic Band Heaters - MHT", "slug": "ceramic-band-heaters"},
             {"title": "Immersion Bobbin Heater - MHT", "slug": "immersion-bobbin-heater-ibcx"},
             {"title": "Energy Saving Band Heaters - MHT", "slug": "energy-saving-band-heaters"},
             {"title": "Ceramic Die Heaters - MHT", "slug": "ceramic-die-heaters"},
@@ -54,9 +63,13 @@ MEGA_MENU_CATEGORIES = {
         "filter_class": ".mica-heaters",
         "products": [
             {"title": "Mica Band Heater - MHT", "slug": "mica-band-heater-mbhxmbsx"},
+            {"title": "Mica Band Heater - MHT", "slug": "mica-band-heater"},
             {"title": "Mica Nozzle Heater - MHT", "slug": "mica-nozzle-heater-mnhx"},
             {"title": "Mica Strip Heater - MHT", "slug": "mica-strip-heater-mshx"},
+            {"title": "Mica Strip Heaters - MHT", "slug": "mica-strip-heaters"},
             {"title": "Finned Strip Heaters - MHT", "slug": "finned-strip-heaters"},
+            {"title": "Coil Type Nozzle Heaters - MHT", "slug": "coil-type-nozzle-heaters"},
+            {"title": "Sealed Mica Nozzle Heaters - MHT", "slug": "sealed-mica-nozzle-heaters"},
         ],
     },
     "porcelain-heaters": {
@@ -71,6 +84,7 @@ MEGA_MENU_CATEGORIES = {
         "filter_class": ".infrared-heaters",
         "products": [
             {"title": "Ceramic Infra-Red Heater - MHT", "slug": "ceramic-infra-red-heater-ihcx"},
+            {"title": "Ceramic Infrared Heaters - MHT", "slug": "ceramic-infrared-heaters"},
             {"title": "Infra-Red Heater Lamp - MHT", "slug": "infra-red-heater-lamp-irlx"},
             {"title": "Oil and gas Heater - MHT", "slug": "oil-and-gas-heater"},
             {"title": "Ovens - MHT", "slug": "ovens"},
@@ -138,6 +152,7 @@ MEGA_MENU_CATEGORIES = {
             {"title": "Thermocouple JType - MHT", "slug": "jtype"},
             {"title": "Thermocouple KType - MHT", "slug": "ktype"},
             {"title": "PT100 Temperature Sensor - MHT", "slug": "pt100"},
+            {"title": "Thermocouples - MHT", "slug": "thermocouples"},
         ],
     },
     "temperature-controllers": {

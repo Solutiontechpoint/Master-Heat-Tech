@@ -212,6 +212,28 @@ def generate_page(template, slug, display_title, description, features, image_fi
     page = page.replace("infra-red-heater-lamp-irlx", slug)
     page = page.replace('class="infra-red-heater-lamp-irlx ani"', f'class="{slug} ani"')
 
+    logo_path = "../../assets/master-heat-industries-logo.jpg"
+    page = page.replace("masterheattechnology.com", "www.masterheatindustries.com")
+    page = page.replace("calorflex-hei-logo.png", "master-heat-industries-logo.jpg")
+    page = page.replace("calorflex-hei-logo.svg", "master-heat-industries-logo.jpg")
+    page = re.sub(
+        r'https?://(?:www\.)?masterheatindustries\.com/wp-content/[^"\']*master-heat-industries-logo\.jpg',
+        logo_path,
+        page,
+    )
+    page = page.replace("/calorflex-products/", "/master-heat-tech-products/")
+    page = re.sub(
+        r'action="https?://(?:www\.)?masterheatindustries\.com[^"]*"',
+        'action="../../php/contact.php"',
+        page,
+    )
+    page = re.sub(
+        r'<meta property="og:image" content="[^"]*"',
+        f'<meta property="og:image" content="../../assets/{image_filename}"',
+        page,
+        count=1,
+    )
+
     desc_pattern = re.compile(
         r"(<div class=\"col-lg-auto col-xl\">\s*)<p>.*?</p>",
         re.S,
