@@ -2,6 +2,7 @@
 """Generate product pages from MHT template and Anupam source HTML."""
 
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -10,7 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "product" / "duct-heater" / "index.html"
-ANUPAM_DIR = Path("/home/thanu/anupam-site/www.anupamheaters.com")
+ANUPAM_DIR = Path(os.environ.get(
+    "ANUPAM_DIR",
+    "/home/thanu/anupam-site-2026-07-12/www.anupamheaters.com",
+))
 MANIFEST = Path(__file__).resolve().parent / "products_manifest.json"
 ASSETS = ROOT / "assets"
 ANUPAM_BASE = "https://www.anupamheaters.com/"
@@ -349,6 +353,16 @@ def update_products_grid(manifest):
             </div>
         </section>"""
         content = content.replace(insert_after, replacement, 1)
+    else:
+        missing_cards = [
+            p for p in manifest["anupam_products"]
+            if f'id="anupam-{p["slug"]}"' not in content
+        ]
+        if missing_cards:
+            cards = "\n".join(build_card(p) for p in missing_cards)
+            grid_close = """            </div>
+        </section>"""
+            content = content.replace(grid_close, cards + "\n" + grid_close, 1)
 
     grid_path.write_text(content, encoding="utf-8")
     print("UPDATED: master-heat-tech-products/index.html")
@@ -520,6 +534,7 @@ def refresh_anupam_images(manifest):
 
 def main():
     force = "--force" in sys.argv
+    force_anupam = "--force-anupam" in sys.argv
     refresh_images = "--refresh-images" in sys.argv
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     template = load_template()
@@ -533,7 +548,7 @@ def main():
     process_mht_missing(manifest, template, force=force)
 
     print("\n=== Phase 2: Anupam products ===")
-    process_anupam(manifest, template, force=force)
+    process_anupam(manifest, template, force=force or force_anupam)
 
     print("\n=== Phase 3: Products grid ===")
     update_products_grid(manifest)

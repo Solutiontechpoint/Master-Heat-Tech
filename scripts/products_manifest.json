@@ -24,7 +24,19 @@
     {"slug": "presettable-timers", "title": "Presettable Timers", "category": "temperature-controllers"},
     {"slug": "single-inlet-blower", "title": "Single Inlet Blower", "category": "accessories"},
     {"slug": "double-inlet-blower", "title": "Double Inlet Blower", "category": "accessories"},
-    {"slug": "plugs", "title": "Plugs", "category": "accessories"}
+    {"slug": "plugs", "title": "Plugs", "category": "accessories"},
+    {"slug": "ceramic-band-heaters", "title": "Ceramic Band Heaters", "category": "ceramic-heaters"},
+    {"slug": "ceramic-infrared-heaters", "title": "Ceramic Infrared Heaters", "category": "infrared-heaters"},
+    {"slug": "coil-type-nozzle-heaters", "title": "Coil Type Nozzle Heaters", "category": "mica-heaters"},
+    {"slug": "finned-tubular-heaters", "title": "Finned Tubular Heaters", "category": "tubular-heaters"},
+    {"slug": "high-density-cartridge-heaters", "title": "High Density Cartridge Heaters", "category": "cartridge-heaters"},
+    {"slug": "immersion-heaters", "title": "Immersion Heaters", "category": "tubular-heaters"},
+    {"slug": "low-medium-density-cartridge-heaters", "title": "Low & Medium Density Cartridge Heaters", "category": "cartridge-heaters"},
+    {"slug": "mica-band-heater", "title": "Mica Band Heater", "category": "mica-heaters"},
+    {"slug": "mica-strip-heaters", "title": "Mica Strip Heaters", "category": "mica-heaters"},
+    {"slug": "sealed-mica-nozzle-heaters", "title": "Sealed Mica Nozzle Heaters", "category": "mica-heaters"},
+    {"slug": "thermocouples", "title": "Thermocouples", "category": "temperature-sensors"},
+    {"slug": "tubular-heaters", "title": "Tubular Heaters", "category": "tubular-heaters"}
   ],
   "mht_missing": [
     {"slug": "air-heater-iahx", "title": "Air Heater", "category": "tubular-heaters", "image_url": "https://masterheattechnology.com/wp-content/uploads/2023/08/IAHx-air-heaters-calorflex.jpg"},
