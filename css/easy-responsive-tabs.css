@@ -1,0 +1,188 @@
+.resp-tabs-list li {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform:uppercase;
+  display: inline-block;
+  padding: 0px 16px;
+  margin:0 0 15px 0;
+  list-style: none;
+  cursor: pointer;border-right:1px solid #d50101;
+  background-color:none !important;
+}
+.resp-tabs-list {text-align: center;float:left;width:100%;margin:0 0 10px;}
+.resp-tabs-list li:last-child{border-right:0;}
+.resp-tabs-list li:nth-child(7){border-right:0;}
+.resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+.resp-tabs-list li.resp-tab-active span{padding: 0 0 10px;background:url(../images/tabs-divider.png) no-repeat center bottom;}
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+  padding: 10px 0 0 0;
+}
+
+.resp-tab-active {
+  border-bottom: none;color:#d50101;
+}
+
+.resp-tab-active {
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.resp-content-active,
+.resp-accordion-active { display: block; }
+
+.resp-tab-content {float:left;width:100%;}
+
+h2.resp-accordion {
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  margin: 0px 0 2% 0;
+  padding: 10px 0 10px 15px;
+  font-weight:600;
+  width:100%;
+  float:left;	
+}
+
+h2.resp-tab-active {
+  border-bottom: 0px solid #c1c1c1 !important;
+  margin-bottom: 0px !important;
+  padding: 10px 0 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+
+}
+
+
+
+/*-----------Vertical tabs-----------*/
+
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  padding: 15px 15px !important;
+  margin: 0;
+  cursor: pointer;
+  float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  float: left;
+  width: 68%;
+  min-height: 250px;
+  border-radius: 4px;
+  clear: none;
+}
+
+.resp-vtabs .resp-tab-content { border: none; }
+
+.resp-vtabs li.resp-tab-active {
+  border: 1px solid #c1c1c1;
+  border-right: none;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-right: -1px !important;
+  padding: 14px 15px 15px 14px !important;
+  
+}
+
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 7px;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+  border-top: 12px solid  #000;
+  background:url(../images/tab-arrow-down.png) no-repeat right top;
+  width:33px;
+  height: 10px;
+  border:none;
+}
+
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797;
+  background:url(../images/tab-arrow-up.png) no-repeat right top;
+  border:0; 
+}
+
+/*-----------Accordion styles-----------*/
+
+h2.resp-tab-active { border:1px solid #c00000 !important; }
+
+.resp-easy-accordion h2.resp-accordion { display: block; border:1px solid #c1c1c1 !important;}
+
+.resp-easy-accordion .resp-tab-content { border: 1px solid #c1c1c1; }
+
+.resp-easy-accordion .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+
+.resp-tab-content-active { display: block; }
+
+h2.resp-accordion:first-child {  }
+
+@media only screen and (max-width:1024px) {
+.resp-tabs-list li { padding:8px 20px;}		
+}
+
+
+@media only screen and (max-width: 768px) {
+.resp-tabs-container {width: 95%;margin:0 auto}
+ul.resp-tabs-list { display: none; }
+
+h2.resp-accordion { display: block; }
+
+.resp-vtabs .resp-tab-content { border: 1px solid #C1C1C1; }
+
+.resp-vtabs .resp-tabs-container {
+  border: none;
+  float: none;
+  width: 100%;
+  min-height: initial;
+  clear: none;
+}
+#ChildVerticalTab_2 h2 {
+    border: 1px solid #d50101 !important;
+    color: #d50101 !important;
+}
+.resp-accordion-closed { display: none !important; }
+
+.resp-vtabs .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+}
+
+
+@media screen and (max-width:480px) {
+.resp-tabs-list li { padding:0 20px;}	
+.resp-tabs-container { width:100%}
+	
+}
+
+@media screen and (max-width:360px) {
+.resp-tabs-list li { padding:0 10px;font-size:14px;}	
+	
+}
+
